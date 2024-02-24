@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
 h2{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -68,20 +72,38 @@ h2{
 }
 
 @media screen and (max-width: 600px) {
+
+
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
     .btn-div a {
       padding: 8px 16px; /* Decrease padding for smaller screens */
+      overflow-y: hidden;
+    }
+
+    .card-div .fact{
+        overflow-y: hidden;
     }
 
     .card-div{
         height: 450px;
+        width: 200px;
+        overflow-y: hidden;
     }
 
     .title{
         text-align: center;
+        font-size: 14px;
     }
 
     .card-container{
-        margin-right: 30px;
-        margin-left: 30px;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
+
   }
